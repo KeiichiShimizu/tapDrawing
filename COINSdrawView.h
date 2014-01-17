@@ -10,4 +10,8 @@
 
 @interface COINSdrawView : UIView
 
++(void)drawCircle:(CGPoint) center PointInCircumference:(CGPoint) point;
++(void)drawLine:(CGPoint) start EndPoint:(CGPoint) end;
+
+
 @end

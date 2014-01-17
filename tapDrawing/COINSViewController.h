@@ -8,13 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "COINSdrawView.h"
+#import "COINSLinedraw.h"
 
 @class COINSdrawView;
 
 @interface COINSViewController : UIViewController {
     COINSdrawView *drawView;
+    
 }
 - (IBAction)rulerButtonAction:(id)sender;
-
+- (IBAction)tapAction:(id)sender;
+-(void)drawLine:(CGPoint)start EndPoint:(CGPoint)end;
+-(void)drawCircle:(CGPoint)center PointInCircumference:(CGPoint)point;
+@property bool isRuler;
+@property bool isFirst;
+@property CGPoint firstPoint;
 
 @end

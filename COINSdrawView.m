@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
@@ -25,6 +25,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    /*
     // Drawing code
     //線の色を青色に
     [[UIColor blueColor] setStroke];
@@ -38,7 +39,7 @@
     [line addLineToPoint:CGPointMake(1024, 0)];
     //線を描画
     [line stroke];
-    
+    */
     //----グリッドの準備----
     //線の色を黒に
     [[UIColor blackColor] setStroke];
@@ -76,6 +77,24 @@
     [gridLine stroke];
     
     
+}
+
++(void)drawCircle:(CGPoint)center PointInCircumference:(CGPoint)point{
+    
+}
++(void)drawLine:(CGPoint)start EndPoint:(CGPoint)end{
+    //線の色を青色に
+    [[UIColor blueColor] setStroke];
+    //線を引く
+    UIBezierPath *line = [UIBezierPath bezierPath];
+    //線の幅を指定
+    [line setLineWidth:3];
+    //始点を指定
+    [line moveToPoint:CGPointMake(0, 0)];
+    //線を追加
+    [line addLineToPoint:CGPointMake(1024, 658)];
+    //線を描画
+    [line stroke];
 }
 
 @end
