@@ -24,16 +24,17 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    CGFloat radius = rect.size.width/2;
     // Drawing code
     CGPoint shiftPoint = CGPointMake(0.5f, 0.5f);
     [[UIColor redColor] setStroke];
     
     // 円を書くUIBezierPathを生成
     UIBezierPath *circle = [UIBezierPath bezierPathWithOvalInRect:
-                            CGRectMake(shiftPoint.x + 32.0f,
-                                       shiftPoint.x + 32.0f,
-                                       64.0f,
-                                       64.0f)];
+                            CGRectMake(rect.origin.x,
+                                       rect.origin.y,
+                                       rect.size.height,
+                                       rect.size.width)];
     // 円を描画
     [circle stroke];
 

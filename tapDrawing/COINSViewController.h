@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "COINSdrawView.h"
 #import "COINSLinedraw.h"
+#import "COINSCircleDraw.h"
 
 @class COINSdrawView;
 
