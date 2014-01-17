@@ -25,6 +25,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    
     /*
     // Drawing code
     //線の色を青色に
@@ -42,7 +43,7 @@
     */
     //----グリッドの準備----
     //線の色を黒に
-    [[UIColor blackColor] setStroke];
+    [[UIColor lightGrayColor] setStroke];
     //四角形を書くuibezierpathを作成
     UIBezierPath *edgeLine = [UIBezierPath bezierPathWithRect:rect];
     //線の幅を指定
@@ -76,6 +77,22 @@
     //罫線の描画
     [gridLine stroke];
     
+    
+    
+    [[UIColor redColor] setStroke];
+    
+    
+     // 円を書くUIBezierPathを生成
+     UIBezierPath *circle = [UIBezierPath bezierPathWithOvalInRect:
+     CGRectMake(shiftPoint.x + 32.0f,
+     shiftPoint.x + 32.0f,
+     64.0f,
+     64.0f)];
+     // 円を描画
+    [circle stroke];
+     
+    
+   
     
 }
 
