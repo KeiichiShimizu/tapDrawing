@@ -1,14 +1,14 @@
 //
-//  COINSLinedraw.m
+//  COINSLineDrawRtoL.m
 //  tapDrawing
 //
 //  Created by Shimizu Keiichi on 2014/01/18.
 //  Copyright (c) 2014年 jp.ac.tsukuba.coins. All rights reserved.
 //
 
-#import "COINSLinedraw.h"
+#import "COINSLineDrawRtoL.h"
 
-@implementation COINSLinedraw
+@implementation COINSLineDrawRtoL
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -26,7 +26,6 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    
     //線の色を青色に
     [[UIColor blueColor] setStroke];
     //線を引く
@@ -34,13 +33,12 @@
     //線の幅を指定
     [line setLineWidth:3];
     //始点を指定
-    [line moveToPoint:CGPointMake(rect.origin.x, rect.origin.y)];
+    [line moveToPoint:CGPointMake(rect.origin.x , rect.origin.y + rect.size.height)];
     //線を追加
-    [line addLineToPoint:CGPointMake(rect.origin.x + rect.size.width, rect.origin.y + rect.size.height)];
+    [line addLineToPoint:CGPointMake(rect.origin.x + rect.size.width, rect.origin.y)];
     //線を描画
     [line stroke];
-    
-}
 
+}
 
 @end

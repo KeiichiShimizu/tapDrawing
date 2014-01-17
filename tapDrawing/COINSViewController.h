@@ -10,6 +10,7 @@
 #import "COINSdrawView.h"
 #import "COINSLinedraw.h"
 #import "COINSCircleDraw.h"
+#import "COINSLineDrawRtoL.h"
 
 @class COINSdrawView;
 
@@ -18,11 +19,14 @@
     
 }
 - (IBAction)rulerButtonAction:(id)sender;
+- (IBAction)compassButtonAction:(id)sender;
 - (IBAction)tapAction:(id)sender;
+- (IBAction)acButtonAction:(id)sender;
 -(void)drawLine:(CGPoint)start EndPoint:(CGPoint)end;
 -(void)drawCircle:(CGPoint)center PointInCircumference:(CGPoint)point;
 @property bool isRuler;
 @property bool isFirst;
 @property CGPoint firstPoint;
+
 
 @end

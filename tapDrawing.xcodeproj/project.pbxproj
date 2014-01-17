@@ -24,6 +24,7 @@
 		829E15FB18893027002946BF /* COINSdrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 829E15FA18893027002946BF /* COINSdrawView.m */; };
 		829E15FE18897E51002946BF /* COINSLinedraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 829E15FD18897E51002946BF /* COINSLinedraw.m */; };
 		829E16011889872B002946BF /* COINSCircleDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 829E16001889872B002946BF /* COINSCircleDraw.m */; };
+		829E16041889A15D002946BF /* COINSLineDrawRtoL.m in Sources */ = {isa = PBXBuildFile; fileRef = 829E16031889A15D002946BF /* COINSLineDrawRtoL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		829E15FD18897E51002946BF /* COINSLinedraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COINSLinedraw.m; sourceTree = "<group>"; };
 		829E15FF1889872B002946BF /* COINSCircleDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COINSCircleDraw.h; sourceTree = "<group>"; };
 		829E16001889872B002946BF /* COINSCircleDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COINSCircleDraw.m; sourceTree = "<group>"; };
+		829E16021889A15D002946BF /* COINSLineDrawRtoL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COINSLineDrawRtoL.h; sourceTree = "<group>"; };
+		829E16031889A15D002946BF /* COINSLineDrawRtoL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COINSLineDrawRtoL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				829E15D1188922A5002946BF /* COINSAppDelegate.m */,
 				829E15F918893027002946BF /* COINSdrawView.h */,
 				829E15FA18893027002946BF /* COINSdrawView.m */,
+				829E16021889A15D002946BF /* COINSLineDrawRtoL.h */,
+				829E16031889A15D002946BF /* COINSLineDrawRtoL.m */,
 				829E15FC18897E51002946BF /* COINSLinedraw.h */,
 				829E15FD18897E51002946BF /* COINSLinedraw.m */,
 				829E15FF1889872B002946BF /* COINSCircleDraw.h */,
@@ -271,6 +276,7 @@
 				829E15D8188922A5002946BF /* COINSViewController.m in Sources */,
 				829E15D2188922A5002946BF /* COINSAppDelegate.m in Sources */,
 				829E15FB18893027002946BF /* COINSdrawView.m in Sources */,
+				829E16041889A15D002946BF /* COINSLineDrawRtoL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

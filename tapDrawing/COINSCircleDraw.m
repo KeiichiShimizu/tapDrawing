@@ -35,6 +35,7 @@
                                        rect.origin.y,
                                        rect.size.height,
                                        rect.size.width)];
+    [circle setLineWidth:2.0f];
     // 円を描画
     [circle stroke];
 

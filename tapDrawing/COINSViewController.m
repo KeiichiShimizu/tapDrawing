@@ -26,7 +26,7 @@
     _isRuler = true;
     self.view.backgroundColor = [UIColor whiteColor];
 	// Do any additional setup after loading the view, typically from a nib.
-    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 658)];
+    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 611)];
     [self.view addSubview:drawView];
 
 }
@@ -44,6 +44,10 @@
     [COINSdrawView drawLine:start EndPoint:end];
     */
     _isRuler = true;
+}
+
+- (IBAction)compassButtonAction:(id)sender {
+    _isRuler = false;
 }
 
 - (IBAction)tapAction:(id)sender {
@@ -64,8 +68,26 @@
     
 }
 
+- (IBAction)acButtonAction:(id)sender {
+    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 658)];
+    [self.view addSubview:drawView];
+}
+
 -(void)drawLine:(CGPoint)start EndPoint:(CGPoint)end{
-    [self drawCircle:start PointInCircumference:end];
+    CGFloat distance = getDistance(start, end);
+    if (start.x > end.x && start.y > end.y) {
+        COINSLinedraw *lineDraw = [[COINSLinedraw alloc] initWithFrame:CGRectMake(MIN(start.x, end.x), MIN(start.y, end.y), ABS(start.x-end.x), ABS(start.y-end.y))];
+            [self.view addSubview:lineDraw];
+    }else if(start.x < end.x && start.y < end.y){
+        COINSLinedraw *lineDraw = [[COINSLinedraw alloc] initWithFrame:CGRectMake(MIN(start.x, end.x), MIN(start.y, end.y), ABS(start.x-end.x), ABS(start.y-end.y))];
+            [self.view addSubview:lineDraw];
+    }else{
+        COINSLineDrawRtoL *lineDraw = [[COINSLineDrawRtoL alloc] initWithFrame:CGRectMake(MIN(start.x, end.x), MIN(start.y, end.y), ABS(start.x-end.x), ABS(start.y-end.y))];
+            [self.view addSubview:lineDraw];
+    }
+    
+
+
 }
 -(void)drawCircle:(CGPoint)center PointInCircumference:(CGPoint)point{
     CGFloat radius = getDistance(center, point);
@@ -73,9 +95,13 @@
     [self.view addSubview:circle];
 }
 
+
+
 CGFloat getDistance(CGPoint p, CGPoint q)
 {
     return sqrtf((p.x-q.x)*(p.x-q.x) + (p.y-q.y)*(p.y-q.y));
 }
+
+
 
 @end

@@ -77,7 +77,7 @@
     //罫線の描画
     [gridLine stroke];
     
-    
+    /*
     
     [[UIColor redColor] setStroke];
     
@@ -91,7 +91,7 @@
      // 円を描画
     [circle stroke];
      
-    
+    */
    
     
 }
