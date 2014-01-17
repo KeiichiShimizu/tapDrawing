@@ -21,6 +21,7 @@
 		829E15E3188922A5002946BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829E15C5188922A5002946BF /* UIKit.framework */; };
 		829E15EB188922A5002946BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 829E15E9188922A5002946BF /* InfoPlist.strings */; };
 		829E15ED188922A5002946BF /* tapDrawingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 829E15EC188922A5002946BF /* tapDrawingTests.m */; };
+		829E15FB18893027002946BF /* COINSdrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 829E15FA18893027002946BF /* COINSdrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		829E15E8188922A5002946BF /* tapDrawingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tapDrawingTests-Info.plist"; sourceTree = "<group>"; };
 		829E15EA188922A5002946BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		829E15EC188922A5002946BF /* tapDrawingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tapDrawingTests.m; sourceTree = "<group>"; };
+		829E15F918893027002946BF /* COINSdrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COINSdrawView.h; path = ../COINSdrawView.h; sourceTree = "<group>"; };
+		829E15FA18893027002946BF /* COINSdrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COINSdrawView.m; path = ../COINSdrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				829E15D0188922A5002946BF /* COINSAppDelegate.h */,
+				829E15F918893027002946BF /* COINSdrawView.h */,
+				829E15FA18893027002946BF /* COINSdrawView.m */,
 				829E15D1188922A5002946BF /* COINSAppDelegate.m */,
 				829E15D3188922A5002946BF /* Main.storyboard */,
 				829E15D6188922A5002946BF /* COINSViewController.h */,
@@ -253,6 +258,7 @@
 				829E15CE188922A5002946BF /* main.m in Sources */,
 				829E15D8188922A5002946BF /* COINSViewController.m in Sources */,
 				829E15D2188922A5002946BF /* COINSAppDelegate.m in Sources */,
+				829E15FB18893027002946BF /* COINSdrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

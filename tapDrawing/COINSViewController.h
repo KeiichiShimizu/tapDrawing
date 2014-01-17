@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "COINSdrawView.h"
 
-@interface COINSViewController : UIViewController
+@class COINSdrawView;
+
+@interface COINSViewController : UIViewController {
+    COINSdrawView *drawView;
+}
+- (IBAction)rulerButtonAction:(id)sender;
+
 
 @end
