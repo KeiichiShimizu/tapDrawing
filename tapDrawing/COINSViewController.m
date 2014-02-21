@@ -72,7 +72,7 @@
     /**/
     [drawView removeFromSuperview];
     _isFirst = true;
-    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 611)];
+    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 640)];
     [self.view addSubview:drawView];
 }
 
