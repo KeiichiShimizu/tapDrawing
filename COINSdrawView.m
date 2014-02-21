@@ -42,7 +42,7 @@
     [line stroke];
     */
     //----グリッドの準備----
-    //線の色を黒に
+    //線の色をライトグレーに
     [[UIColor lightGrayColor] setStroke];
     //四角形を書くuibezierpathを作成
     UIBezierPath *edgeLine = [UIBezierPath bezierPathWithRect:rect];
@@ -60,10 +60,10 @@
     //罫線の定義
     float startX = shiftPoint.x;
     float endX = startX + 1024.0f;
-    float deltaX = 1024.0f / 21.0f;
+    float deltaX = 1024.0f / 16.0f;
     float startY = shiftPoint.y;
-    float endY = startY + 658.0f;
-    float deltaY = 658.0f / 14.0f;
+    float endY = startY + 640.0f;
+    float deltaY = 640.0f / 10.0f;
     //縦線
     for (float x = startX + deltaX; x < endX; x += deltaX) {
         [gridLine moveToPoint:CGPointMake(x, startY)];

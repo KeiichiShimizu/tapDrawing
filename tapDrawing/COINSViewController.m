@@ -26,7 +26,7 @@
     _isRuler = true;
     self.view.backgroundColor = [UIColor whiteColor];
 	// Do any additional setup after loading the view, typically from a nib.
-    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 611)];
+    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 640)];
     [self.view addSubview:drawView];
 
 }
