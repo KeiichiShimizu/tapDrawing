@@ -69,7 +69,9 @@
 }
 
 - (IBAction)acButtonAction:(id)sender {
-    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 658)];
+    /**/
+    [drawView removeFromSuperview];
+    drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 611)];
     [self.view addSubview:drawView];
 }
 
@@ -77,13 +79,13 @@
     CGFloat distance = getDistance(start, end);
     if (start.x > end.x && start.y > end.y) {
         COINSLinedraw *lineDraw = [[COINSLinedraw alloc] initWithFrame:CGRectMake(MIN(start.x, end.x), MIN(start.y, end.y), ABS(start.x-end.x), ABS(start.y-end.y))];
-            [self.view addSubview:lineDraw];
+            [drawView addSubview:lineDraw];
     }else if(start.x < end.x && start.y < end.y){
         COINSLinedraw *lineDraw = [[COINSLinedraw alloc] initWithFrame:CGRectMake(MIN(start.x, end.x), MIN(start.y, end.y), ABS(start.x-end.x), ABS(start.y-end.y))];
-            [self.view addSubview:lineDraw];
+            [drawView addSubview:lineDraw];
     }else{
         COINSLineDrawRtoL *lineDraw = [[COINSLineDrawRtoL alloc] initWithFrame:CGRectMake(MIN(start.x, end.x), MIN(start.y, end.y), ABS(start.x-end.x), ABS(start.y-end.y))];
-            [self.view addSubview:lineDraw];
+            [drawView addSubview:lineDraw];
     }
     
 
@@ -92,7 +94,7 @@
 -(void)drawCircle:(CGPoint)center PointInCircumference:(CGPoint)point{
     CGFloat radius = getDistance(center, point);
     COINSCircleDraw *circle = [[COINSCircleDraw alloc] initWithFrame:CGRectMake(center.x-radius, center.y-radius, 2*radius, 2*radius)];
-    [self.view addSubview:circle];
+    [drawView addSubview:circle];
 }
 
 
