@@ -71,6 +71,7 @@
 - (IBAction)acButtonAction:(id)sender {
     /**/
     [drawView removeFromSuperview];
+    _isFirst = true;
     drawView = [[COINSdrawView alloc] initWithFrame:CGRectMake(0, 20, 1024, 611)];
     [self.view addSubview:drawView];
 }
