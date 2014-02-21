@@ -97,8 +97,10 @@
 }
 
 +(void)drawCircle:(CGPoint)center PointInCircumference:(CGPoint)point{
-    
 }
+
+
+
 +(void)drawLine:(CGPoint)start EndPoint:(CGPoint)end{
     //線の色を青色に
     [[UIColor blueColor] setStroke];

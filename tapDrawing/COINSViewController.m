@@ -96,6 +96,13 @@
 }
 
 
+CGPoint fitToGrid(CGPoint Poit){
+    CGPoint newPoint;
+    
+    
+    return newPoint;
+}
+
 
 CGFloat getDistance(CGPoint p, CGPoint q)
 {
