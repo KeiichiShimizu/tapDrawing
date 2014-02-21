@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1D30BF8D-99BB-4F41-95B4-1B4143D67BBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tapDrawing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5EF3453E-06B9-4C84-BB95-540F1A97A85E</key>
+		<string>ssh://github.com/KeiichiShimizu/tapDrawing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tapDrawing.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5EF3453E-06B9-4C84-BB95-540F1A97A85E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/KeiichiShimizu/tapDrawing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5EF3453E-06B9-4C84-BB95-540F1A97A85E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5EF3453E-06B9-4C84-BB95-540F1A97A85E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tapDrawing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
