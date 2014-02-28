@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "COINSPointDraw.h"
 #import "COINSdrawView.h"
 #import "COINSLinedraw.h"
 #import "COINSCircleDraw.h"

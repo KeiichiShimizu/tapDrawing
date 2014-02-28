@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tapDrawing/COINSViewController.m"
-            timestampString = "414661343.531464"
+            timestampString = "415318670.948083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "-drawLine:EndPoint:"
             landmarkType = "5">
          </BreakpointContent>

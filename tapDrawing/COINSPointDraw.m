@@ -26,6 +26,11 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
+    [[UIColor redColor] setStroke];
+    [[UIColor yellowColor] setFill];
+    UIBezierPath *point = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(rect.origin.x, rect.origin.y, 10.0f, 10.0f)];
+    [point stroke];
+    [point fill];
 }
 
 @end

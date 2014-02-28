@@ -54,9 +54,13 @@
     NSLog(@"tapped");
     if (_isFirst) {
         _firstPoint = [sender locationInView:drawView];
+        _firstPoint = fitToGrid(_firstPoint);
+        [self drawPoint:_firstPoint];
         _isFirst = false;
     }else{
         CGPoint location = [sender locationInView:drawView];
+        location = fitToGrid(location);
+        [self drawPoint:location];
         if (_isRuler) {
             [self drawLine:_firstPoint EndPoint:location];
             _isFirst = true;
@@ -97,10 +101,19 @@
     COINSCircleDraw *circle = [[COINSCircleDraw alloc] initWithFrame:CGRectMake(center.x-radius, center.y-radius, 2*radius, 2*radius)];
     [drawView addSubview:circle];
 }
+-(void)drawPoint:(CGPoint)point{
+    COINSPointDraw *dot = [[COINSPointDraw alloc] initWithFrame:CGRectMake(point.x-5, point.y-5, 10.5f, 10.5f)];
+    [drawView addSubview:dot];
+}
 
 
-CGPoint fitToGrid(CGPoint Poit){
+CGPoint fitToGrid(CGPoint Point){
     CGPoint newPoint;
+    NSInteger x,y;
+    x = (int)(Point.x/64);
+    y = (int)(Point.y/64);
+    newPoint.x = (x)*64;
+    newPoint.y = (y)*64;
     
     
     return newPoint;
